@@ -1,0 +1,37 @@
+.main-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #111111;
+  width: calc(100vw - 320px);
+}
+
+.empty-chat {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0a0a;
+}
+
+.empty-chat-content {
+  text-align: center;
+  color: #666666;
+}
+
+.empty-chat-content svg {
+  color: #333333;
+  margin-bottom: 24px;
+}
+
+.empty-chat-content h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #cccccc;
+  margin-bottom: 12px;
+}
+
+.empty-chat-content p {
+  font-size: 15px;
+  color: #666666;
+}
