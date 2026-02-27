@@ -1,0 +1,138 @@
+.chat-header {
+  padding: 20px 40px;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #222222;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.chat-header-info h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.status-badge {
+  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.status-open {
+  background-color: #1a3a2a;
+  color: #4ade80;
+}
+
+.status-badge.status-ai_handling {
+  background-color: #1a2a3a;
+  color: #60a5fa;
+}
+
+.status-badge.status-escalated {
+  background-color: #3a2a1a;
+  color: #fb923c;
+}
+
+.status-badge.status-human_handling {
+  background-color: #3a1a1a;
+  color: #f87171;
+}
+
+.status-badge.status-closed {
+  background-color: #2a2a2a;
+  color: #888888;
+}
+
+.ticket-badge {
+  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.ticket-badge.ticket-open {
+  background-color: #1a3a2a;
+  color: #4ade80;
+}
+
+.ticket-badge.ticket-assigned {
+  background-color: #1a2a3a;
+  color: #60a5fa;
+}
+
+.ticket-badge.ticket-resolved {
+  background-color: #2a3a1a;
+  color: #a3e635;
+}
+
+.ticket-badge.ticket-closed {
+  background-color: #2a2a2a;
+  color: #888888;
+}
+
+.chat-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.action-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.takeover-button {
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  box-shadow: 0 4px 12px rgba(251, 146, 60, 0.3);
+}
+
+.takeover-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(251, 146, 60, 0.4);
+}
+
+.resolve-button {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.3);
+}
+
+.resolve-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(74, 222, 128, 0.4);
+}
+
+.close-button {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.close-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.4);
+}
+
+.action-button:active {
+  transform: translateY(0);
+}
